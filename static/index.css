@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #56ccf2, #2f80ed);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Login {
+    background-color: white;
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.Login h1 {
+    margin-bottom: 20px;
+    color: #2f80ed;
+}
+
+.Login input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.Login button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2f80ed;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.Login button:hover {
+    background-color: #1e5fba;
+}
+
+.Login h2 {
+    margin-top: 20px;
+    color: #333;
+    font-weight: normal;
+}
+
+@media (max-width: 480px) {
+    .Login {
+        padding: 30px 20px;
+    }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+ <div class="Login">
+        <h1>FWI Prediction</h1>
+        
+        <form action="{{ url_for('predict_datapoint')}}" method="post">
+            <input type="text" name="Nitrogen" placeholder="Nitrogen Content" required="required" /><br>
+            <input type="text" name="Phosphorous" placeholder="Phosphorous Content" required="required" /><br>
+            <input type="text" name="Potassium" placeholder="Potassium Content" required="required" /><br>
+            <input type="text" name="Temperature" placeholder="Temperature" required="required" /><br>
+            <input type="text" name="Humidity" placeholder="Humidity" required="required" /><br>
+            <input type="text" name="PH" placeholder="PH" required="required" /><br>
+            <input type="text" name="Rainfall" placeholder="Rainfall" required="required" /><br>
+
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+        <h2>The Corp Prediction : {{results}}</h2>
+    </div>
+</body>
+</html>
